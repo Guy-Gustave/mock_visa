@@ -3,7 +3,8 @@
 }
 
 .searchContainerDiv,
-.searchWrapperDiv {
+.searchWrapperDiv,
+.displayFlexAndColumn {
   display: flex;
   align-items: center;
   justify-content: center;
