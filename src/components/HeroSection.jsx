@@ -2,6 +2,7 @@ import React from 'react';
 
 import SearchContainer from './SearchContainer';
 import MetricsComponent from './MetricsComponent';
+import AsSeenContainer from './AsSeenComponents/AsSeenContainer';
 import styles from '../styles/HeroSection.module.css';
 import searchContainerStyles from '../styles/SearchContainer.module.css';
 
@@ -12,6 +13,7 @@ const HeroSection = () => {
     >
       <SearchContainer />
       <MetricsComponent />
+      <AsSeenContainer />
     </section>
   );
 };
