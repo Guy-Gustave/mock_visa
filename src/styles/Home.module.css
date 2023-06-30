@@ -6,6 +6,5 @@
   width: var(--home-section-width);
   max-width: var(--home-section-width);
   min-width: var(--home-section-width);
-  border: 1px solid blue;
   margin: 0 auto;
 }
