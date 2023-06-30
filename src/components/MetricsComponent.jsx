@@ -10,7 +10,7 @@ const MetricsComponent = () => {
           <span>&#x2713;</span>
           <h4>6M+</h4>
         </div>
-        <h4 classname={styles.metricTitle}>users annually</h4>
+        <h4 className={styles.metricTitle}>users annually</h4>
       </div>
 
       <div className={styles.metricWrapperDiv}>
@@ -18,7 +18,7 @@ const MetricsComponent = () => {
           <span>&#x2713;</span>
           <h4>100K+</h4>
         </div>
-        <h4 classname={styles.metricTitle}>visa requirements</h4>
+        <h4 className={styles.metricTitle}>visa requirements</h4>
       </div>
 
       <div className={styles.metricWrapperDiv}>
@@ -26,7 +26,7 @@ const MetricsComponent = () => {
           <span>&#x2713;</span>
           <h4>239+</h4>
         </div>
-        <h4 classname={styles.metricTitle}>countries covered</h4>
+        <h4 className={styles.metricTitle}>countries covered</h4>
       </div>
 
       <div className={styles.metricWrapperDiv}>
@@ -34,7 +34,7 @@ const MetricsComponent = () => {
           <span>&#x2713;</span>
           <h4>4+</h4>
         </div>
-        <h4 classname={styles.metricTitle}>active years</h4>
+        <h4 className={styles.metricTitle}>active years</h4>
       </div>
     </div>
   );
