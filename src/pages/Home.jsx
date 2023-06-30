@@ -1,13 +1,14 @@
-import React from 'react'
-import SearchContainer from '../components/SearchContainer'
+import React from 'react';
+import SearchContainer from '../components/SearchContainer';
+
+import styles from '../styles/Home.module.css';
 
 const Home = () => {
   return (
-    <div>
-      <h1>This is home page</h1>
+    <section className={styles.homeSection}>
       <SearchContainer />
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Home
+export default Home;
