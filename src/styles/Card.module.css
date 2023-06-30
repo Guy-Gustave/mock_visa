@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .card-image {
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: inherit;
+  }
+  
+  .card-content {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
