@@ -31,4 +31,9 @@
 
 .searchWrapperDiv {
   color: var(--text-white);
+  width: 40%;
+}
+
+.visaSelectDiv {
+  width: 100%;
 }
