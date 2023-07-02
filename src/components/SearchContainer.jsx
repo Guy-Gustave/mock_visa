@@ -22,7 +22,9 @@ const SearchContainer = () => {
             ? `You want to travel to ${currentCountry}`
             : 'Country you want to travel to'}
         </small>
-        <button type="button">SEARCH</button>
+        <button type="button" className={styles.searchContainerButton}>
+          SEARCH
+        </button>
       </div>
     </div>
   );
