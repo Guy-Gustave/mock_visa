@@ -54,7 +54,7 @@ const CountrySelectComponent = ({ setCurrentCountry }) => {
           type="text"
           className={styles.selectedCountryInput}
           placeholder="Choose your passport country"
-          autoComplete="false"
+          autoComplete="off"
           name="Country"
           defaultValue={selectedCountry}
           onChange={handleDynamicSearch}
