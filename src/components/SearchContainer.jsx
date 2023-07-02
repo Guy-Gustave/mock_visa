@@ -1,6 +1,7 @@
 import React from 'react';
 
 import VisaSelectComponent from './SearchSectionComponents/VisaSelectComponent';
+import CountrySelectComponent from './SearchSectionComponents/CountrySelectComponent';
 import styles from '../styles/SearchContainer.module.css';
 
 const SearchContainer = () => {
@@ -11,7 +12,9 @@ const SearchContainer = () => {
         <div className={styles.visaSelectDiv}>
           <VisaSelectComponent />
         </div>
-        <div className={styles.searchCountryDiv}></div>
+        <div className={styles.searchCountryDiv}>
+          <CountrySelectComponent />
+        </div>
         <small>Country you want to travel to</small>
         <button type="button">SEARCH</button>
       </div>
