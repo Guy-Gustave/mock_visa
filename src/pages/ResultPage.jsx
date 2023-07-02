@@ -9,10 +9,10 @@ const ResultPage = () => {
   const countryName = countryVisa[countryVisa.length - 2];
 
   return (
-    <div>
+    <div style={{ padding: '0 30px' }}>
       <h1>Results</h1>
-      <h3>Country: {countryName}</h3>
-      <h5>Visa Type: {visaType}</h5>
+      <h3 style={{ margin: '20px 0' }}>Country: {countryName}</h3>
+      <h3>Visa Type: {visaType}</h3>
     </div>
   );
 };
