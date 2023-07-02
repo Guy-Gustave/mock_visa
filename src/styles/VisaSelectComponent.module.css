@@ -27,17 +27,29 @@
     0 3px 14px 2px rgb(0 0 0 / 12%);
   opacity: 0;
   border-bottom-left-radius: 10px;
+  pointer-events: none;
 }
 
 .selectTypesDiv:focus > .visaTypesListDiv {
   opacity: 1;
   transition: opacity 0.3s;
   transition-delay: 0.2s;
+  pointer-events: all;
 }
 
 .visaTypesList {
   max-height: 200px;
   overflow: auto;
+}
+
+.visaListItem {
+  transform: translateY(-50%);
+}
+
+.selectTypesDiv:focus .visaListItem {
+  transform: translateY(0);
+  transition: transform 0.3s;
+  transition-delay: 0.2s;
 }
 
 .visaListItem:hover {
