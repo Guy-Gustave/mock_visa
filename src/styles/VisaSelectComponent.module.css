@@ -1,0 +1,44 @@
+.selectTypesDiv,
+.visaListItem {
+  padding: 15px 20px;
+}
+
+.selectTypesDiv {
+  background-color: white;
+  color: var(--text-color);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.selectTypesDiv:focus {
+  border-radius: 10px 10px 0 0;
+}
+
+.visaTypesListDiv {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  border-top: 1px solid black;
+  box-shadow: 0 5px 5px -3px rgb(0 0 0 / 20%), 0 8px 10px 1px rgb(0 0 0 / 14%),
+    0 3px 14px 2px rgb(0 0 0 / 12%);
+  opacity: 0;
+  border-bottom-left-radius: 10px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.selectTypesDiv:focus > .visaTypesListDiv {
+  opacity: 1;
+}
+
+.visaTypesList {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.visaListItem:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
