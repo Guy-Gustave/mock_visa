@@ -35,6 +35,12 @@
   width: 40%;
 }
 
-.visaSelectDiv {
+.visaSelectDiv,
+.searchCountryDiv {
   width: 100%;
+  /* background: green; */
+}
+
+.searchCountryDiv {
+  margin: 10px 0;
 }

@@ -28,6 +28,7 @@
   opacity: 0;
   border-bottom-left-radius: 10px;
   pointer-events: none;
+  z-index: 1;
 }
 
 .selectTypesDiv:focus > .visaTypesListDiv {
