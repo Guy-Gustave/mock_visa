@@ -3,7 +3,7 @@ import React, { useState, useRef } from 'react';
 import countries from '../../services/emojiFlagCountries.json';
 import styles from '../../styles/CountrySelectComponent.module.css';
 
-const CountrySelectComponent = () => {
+const CountrySelectComponent = ({ setCurrentCountry }) => {
   const countriesList = [...countries.flagCountries];
   const [inputFocused, setInputFocused] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState(countriesList[0].name);
@@ -13,6 +13,7 @@ const CountrySelectComponent = () => {
   const handleSelectListItem = (e) => {
     inputRef.current.value = e.target.children[1].outerText;
     setSelectedCountry(e.target.children[1].outerText);
+    setCurrentCountry(e.target.children[1].outerText);
     countriesRef.current.blur();
   };
 

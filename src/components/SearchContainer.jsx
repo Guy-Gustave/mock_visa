@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import VisaSelectComponent from './SearchSectionComponents/VisaSelectComponent';
 import CountrySelectComponent from './SearchSectionComponents/CountrySelectComponent';
 import styles from '../styles/SearchContainer.module.css';
 
 const SearchContainer = () => {
+  const [currentCountry, setCurrentCountry] = useState('');
+
   return (
     <div className={styles.searchContainerDiv}>
       <h1 className={styles.searchContainerHeading}>Find Your Freedom</h1>
@@ -13,9 +15,13 @@ const SearchContainer = () => {
           <VisaSelectComponent />
         </div>
         <div className={styles.searchCountryDiv}>
-          <CountrySelectComponent />
+          <CountrySelectComponent setCurrentCountry={setCurrentCountry} />
         </div>
-        <small>Country you want to travel to</small>
+        <small className={styles.confirmationSmall}>
+          {currentCountry
+            ? `You want to travel to ${currentCountry}`
+            : 'Country you want to travel to'}
+        </small>
         <button type="button">SEARCH</button>
       </div>
     </div>
