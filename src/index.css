@@ -13,10 +13,11 @@
 :root {
   --text-color: #444;
   --main-border-radius: 10px;
+  --global-font-family: 'Roboto', sans-serif;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--global-font-family);
   color: var(--text-color);
 }
 
