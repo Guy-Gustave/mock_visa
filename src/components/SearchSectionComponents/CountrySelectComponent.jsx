@@ -4,12 +4,17 @@ import countries from '../../services/emojiFlagCountries.json';
 import styles from '../../styles/CountrySelectComponent.module.css';
 
 const CountrySelectComponent = ({ setCurrentCountry }) => {
+  // component starter variables
   const countriesList = [...countries.flagCountries];
+
+  // component states
   const [currentCountriesList, setCurrentCountriesList] = useState([
     ...countriesList,
   ]);
   const [inputFocused, setInputFocused] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState(countriesList[0].name);
+
+  // component refs
   const inputRef = useRef();
   const countriesRef = useRef();
 
