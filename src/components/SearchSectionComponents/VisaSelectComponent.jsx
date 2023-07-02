@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
 
-import coutries from '../../services/emojiFlagCountries.json';
 import visaTypes from '../../services/VisaTypes.json';
 import styles from '../../styles/VisaSelectComponent.module.css';
 
-const VisaSelectComponent = () => {
+const VisaSelectComponent = ({ setCurrentVisa }) => {
   const visaTypesArray = [...visaTypes];
   const [selectedVisa, setSelectedVisa] = useState(visaTypesArray[0]);
 
@@ -12,6 +11,7 @@ const VisaSelectComponent = () => {
   const handleSettingVisa = (e) => {
     console.log(e.target.outerText);
     setSelectedVisa(e.target.outerText);
+    setCurrentVisa(e.target.outerText);
     selectDivRef.current.blur();
   };
 
