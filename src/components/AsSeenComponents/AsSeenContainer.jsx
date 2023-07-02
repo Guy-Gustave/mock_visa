@@ -12,7 +12,10 @@ const AsSeenContainer = () => {
       <div className={styles.asSeenLogoContainer}>
         {logoData.map((singleData) => {
           return (
-            <div className={styles.asSeenLogoWrapper}>
+            <div
+              className={styles.asSeenLogoWrapper}
+              key={singleData.source.toString()}
+            >
               <AsSeenLogo
                 imgSrc={singleData.source}
                 pageLink={singleData.pageLink}
