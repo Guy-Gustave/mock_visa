@@ -1,21 +1,14 @@
-import React from 'react'
-import styles from '../styles/Card.css'
+import React from "react";
+import styles from "../styles/Card.module.css";
 
 const Card = (props) => {
   return (
-    <div>
-      <article className={ styles.card } >
-      <div className= { styles.card-image } >
-        <img alt="" src={`${props.imageUrl}`} />
-      </div>
+    <div className={styles.card}>
+      <img className={styles.cardImage} alt="" src={`${props.imageUrl}`} />
 
-      <div className="card-content">
-        <h2>{props.title}</h2>
-        <p>{props.body}</p>
-      </div>
-    </article>
+      <h3 className={styles.cardContent}>{props.title}</h3>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

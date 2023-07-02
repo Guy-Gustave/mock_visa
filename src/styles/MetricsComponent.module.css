@@ -1,0 +1,45 @@
+.metricsContainerDiv,
+.metricWrapperDiv,
+.numberDiv,
+.numberDiv > span {
+  display: flex;
+  align-items: center;
+}
+
+.metricsContainerDiv {
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 2em;
+  margin-top: 20px;
+  min-width: 95%;
+  max-width: 95%;
+  border-radius: var(--main-border-radius);
+  box-shadow: 0 0 0 1px rgba(50, 50, 93, 0.05),
+    0 2px 5px 0 rgba(50, 50, 93, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+}
+
+.metricWrapperDiv {
+  flex-direction: column;
+  gap: 5px;
+}
+
+.numberDiv {
+  justify-content: center;
+  font-size: 1.5em;
+  color: #2196f3;
+}
+
+.numberDiv > span {
+  justify-content: center;
+  width: 1.3em;
+  aspect-ratio: 1;
+  background-color: #bbdefb;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.metricWrapperDiv > h4 {
+  font-weight: normal;
+  font-size: 1.2em;
+  text-align: center;
+}

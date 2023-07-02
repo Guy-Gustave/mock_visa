@@ -1,0 +1,17 @@
+:root {
+  --text-white: white;
+}
+
+.sections {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  color: var(--text-white);
+  margin-top: 2rem;
+}
+
+
+.passport {
+  /* height: 250px; */
+}

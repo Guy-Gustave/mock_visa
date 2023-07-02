@@ -12,6 +12,7 @@
 
 :root {
   --text-color: #444;
+  --main-border-radius: 10px;
 }
 
 body {

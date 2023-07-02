@@ -1,0 +1,16 @@
+.asSeenLogoDiv {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.asSeenLogoDiv:hover {
+  transform: scale(1.2);
+}
+
+.asSeenImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
