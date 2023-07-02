@@ -1,0 +1,8 @@
+:root {
+    --text-white: white;
+    --text-blue: blue;
+  }
+
+  .box {
+    background-color: var(--text-blue);
+  }
