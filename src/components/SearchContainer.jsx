@@ -8,9 +8,7 @@ import CountrySelectComponent from './SearchSectionComponents/CountrySelectCompo
 import styles from '../styles/SearchContainer.module.css';
 
 const SearchContainer = () => {
-  const [currentCountry, setCurrentCountry] = useState(
-    countries.flagCountries[0].name
-  );
+  const [currentCountry, setCurrentCountry] = useState('');
   const [currentVisa, setCurrentVisa] = useState(visaTypes[0]);
 
   return (
@@ -28,7 +26,11 @@ const SearchContainer = () => {
             ? `You want to travel to ${currentCountry}`
             : 'Country you want to travel to'}
         </small>
-        <Link to={`/${currentCountry}/${currentVisa}`}>
+        <Link
+          to={`/${
+            currentCountry ? currentCountry : countries.flagCountries.name
+          }/${currentVisa}`}
+        >
           <button type="button" className={styles.searchContainerButton}>
             SEARCH
           </button>

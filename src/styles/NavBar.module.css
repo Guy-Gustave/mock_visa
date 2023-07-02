@@ -1,0 +1,21 @@
+.navBarContainerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 30px 30px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+
+.navBarLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navBarLinks > span {
+  font-size: 20px;
+  color: #888;
+}

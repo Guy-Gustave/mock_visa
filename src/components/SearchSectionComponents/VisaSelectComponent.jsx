@@ -18,7 +18,13 @@ const VisaSelectComponent = ({ setCurrentVisa }) => {
   return (
     <div className={styles.visaSelectContainerDiv}>
       <div className={styles.selectTypesDiv} tabIndex={-1} ref={selectDivRef}>
+        <span className={styles.tagSpan}>
+          <i className="fa-solid fa-tag"></i>
+        </span>
         <p className={styles.selectedTypePar}>{selectedVisa}</p>
+        <span className={styles.angleSpan}>
+          <i className="fa-solid fa-angle-down"></i>
+        </span>
         <div className={styles.visaTypesListDiv}>
           <ul className={styles.visaTypesList}>
             {visaTypes.map((type) => {
