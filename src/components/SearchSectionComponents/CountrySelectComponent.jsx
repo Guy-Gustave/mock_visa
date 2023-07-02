@@ -12,7 +12,7 @@ const CountrySelectComponent = ({ setCurrentCountry }) => {
     ...countriesList,
   ]);
   const [inputFocused, setInputFocused] = useState(false);
-  const [selectedCountry, setSelectedCountry] = useState(countriesList[0].name);
+  const [selectedCountry, setSelectedCountry] = useState('');
 
   // component refs
   const inputRef = useRef();
