@@ -5,6 +5,9 @@ import styles from '../../styles/CountrySelectComponent.module.css';
 
 const CountrySelectComponent = ({ setCurrentCountry }) => {
   const countriesList = [...countries.flagCountries];
+  const [currentCountriesList, setCurrentCountriesList] = useState([
+    ...countriesList,
+  ]);
   const [inputFocused, setInputFocused] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState(countriesList[0].name);
   const inputRef = useRef();
@@ -15,6 +18,14 @@ const CountrySelectComponent = ({ setCurrentCountry }) => {
     setSelectedCountry(e.target.children[1].outerText);
     setCurrentCountry(e.target.children[1].outerText);
     countriesRef.current.blur();
+  };
+
+  const handleDynamicSearch = (e) => {
+    const currentText = e.target.value;
+    const newList = countriesList.filter((country) =>
+      country.name.toLowerCase().includes(currentText.toLowerCase())
+    );
+    setCurrentCountriesList([...newList]);
   };
 
   return (
@@ -41,7 +52,7 @@ const CountrySelectComponent = ({ setCurrentCountry }) => {
           autoComplete="false"
           name="Country"
           defaultValue={selectedCountry}
-          onChange={() => {}}
+          onChange={handleDynamicSearch}
           ref={inputRef}
         />
         <div
@@ -50,7 +61,7 @@ const CountrySelectComponent = ({ setCurrentCountry }) => {
           }`}
         >
           <ul className={styles.countriesList}>
-            {countriesList.map((country) => {
+            {currentCountriesList.map((country) => {
               return (
                 <li
                   key={country.name}
