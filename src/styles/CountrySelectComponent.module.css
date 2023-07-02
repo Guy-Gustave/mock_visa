@@ -66,6 +66,19 @@
   gap: 20px;
 }
 
+.countryListItem > * {
+  pointer-events: none;
+}
+
 .countryListItem:hover {
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+.itemSelected {
+  color: #306fab;
+  background-color: #d9e3ef;
+}
+
+.itemSelected:hover {
+  background-color: #d9e3ef;
 }
