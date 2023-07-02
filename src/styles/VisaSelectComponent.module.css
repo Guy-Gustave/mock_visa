@@ -1,9 +1,16 @@
+:root {
+  --blue-primary: #306fab;
+}
+
 .selectTypesDiv,
 .visaListItem {
   padding: 15px 20px;
 }
 
 .selectTypesDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   background-color: white;
   color: var(--text-color);
   border-radius: 100px;
@@ -16,6 +23,28 @@
 
 .selectTypesDiv:focus {
   border-radius: 10px 10px 0 0;
+}
+
+.tagSpan,
+.angleSpan {
+  color: #777;
+  transition: all 0.4s ease-in-out;
+}
+
+.tagSpan {
+  font-size: 25px;
+}
+
+.selectTypesDiv:focus > span {
+  color: var(--blue-primary);
+}
+
+.selectTypesDiv:focus > .angleSpan {
+  transform: rotate(180deg);
+}
+
+.selectedTypePar {
+  flex: 1;
 }
 
 .visaTypesListDiv {
@@ -60,7 +89,7 @@
 }
 
 .itemSelected {
-  color: #306fab;
+  color: var(--blue-primary);
   background-color: #d9e3ef;
 }
 
